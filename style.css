@@ -179,6 +179,7 @@ main{
     background-color: #1F1F1F;
     height: 210px;
     width:min(1em 455px) ;
+    position: relative;
 }
 
 
@@ -594,29 +595,48 @@ footer{
 
  /* Player   */
  
-
+.player{
+    /* align-items: baseline; */
+    position:fixed;
+    bottom: 200px;
+    display: flex;
+}
  .player ul{
+    position: absolute;
+    bottom: 60px;
+    left: 140px;
     list-style: none;
     display: flex;
     align-items: center;
+
+    /* flex-direction: column; */
+    
     justify-content: center;
+}
+.playBar{
+
+    position: absolute;
+    bottom: 100px;
+    left: 90px;
 }
 input[type="range"]{
     -webkit-appearance: none;
-    width: 100px;
-    background-color:yellow;
+    width: 200px;
+    /* background-color:yellow; */
     height: 4px;
     border-radius: 19px;
 }
 /* input[type = "range"]::-webkit-slider-runnable-track{
-    height: 12px;
+    height: 2px;
     background: #bbb;
-    border-radius: 25%;
-} */
- /* input[type="range"]::-webkit-scrollbar-thumb{
+    border-radius: %; */
+/* } */
+ input[type="range"]::-webkit-slider-thumb{
     -webkit-appearance: none;
-    width: 8px;
+    appearance: none;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    background-color: red;
+    background: rgb(210, 5, 5);
     cursor: pointer;
- } */
+ }

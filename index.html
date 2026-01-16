@@ -49,12 +49,13 @@
             <div class="playSection">
             <div class="player">
                 <ul>
-                    <li><button class="previous"><img  width="24px" src="Materials/letfPlay.svg" alt=""></button></li>
-                    <li><button class="pause"></button><img width="24px" src="Materials/pause.svg" alt=""></button></li>
-                    <!-- <li><img width="24px" src="Materials/play.svg" alt=""></li> -->
-                    <li><button></button class="next"><img width="24px" src="Materials/rightPlay.svg" alt=""></button></li>
-                    <input type="range" name="audioRange" id="audioDuration">
+                    <li><img class="controlBtns previous" src="Materials/letfPlay.svg" alt=""></li>
+                    <li><img class="controlBtns play" src="Materials/pause.svg"  alt=""></li>
+                    <li><img class="controlBtns pause" src="Materials/play.svg" alt="" style="display: none;"></li>
+                    <li><img class="controlBtns next" src="Materials/rightPlay.svg" alt=""></li>
                 </ul>
+                <input class="playBar" value="0" type="range" id="currentDuration">
+                <audio style="display: none;" id="play"></audio>
             </div>
             </div>
             <div class="support">
@@ -83,84 +84,84 @@
                 <div class="trendSongList">
                     <ul>
                         <li>
-                           <div class="liBg"> <img width="154px" src="Materials/TrendSongCovers/ab67616d00001e028fa95e3e74799cb0b2a1fb57.jpg" alt="">
+                           <div class="liBg"> <img width="154px" src="Materials/TrendSongCovers/ab67616d00001e028fa95e3e74799cb0b2a1fb57.jpg" class="img-songs" data-audio="Materials/TrendSongs/Aadat.mp3" type="mp3/mpeg">
                             <p>Aadat(Feat.AP Dhillon)</p>
                             <p>Yo Yo Honey Singh, AP Dhillon</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/sheetLahar.jpg" alt="">
+                            <img width="154px" src="Materials/TrendSongCovers/sheetLahar.jpg" class="img-songs" data-audio="Materials/TrendSongs/Seet Laher.mp3" type="mp3/mpeg">
                             <p>Sheet Lehar</p>
                             <p>Filmy, Riyazi</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Dhurandar.jpg" alt="">
+                            <img width="154px" src="Materials/TrendSongCovers/Dhurandar.jpg" class="img-songs" data-audio="Materials/TrendSongs/Gehra Hua.mp3" type="mp3/mpeg">
                             <p>Gehra Hua</p>
                             <p>Shashwat Sachdev, Arijit Singh, Irshad Kamli</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Thodi Si daru.jpg" alt="">
+                            <img width="154px" src="Materials/TrendSongCovers/Thodi Si daru.jpg" class="img-songs" data-audio="Materials/TrendSongs/Thodi Si Daru.mp3" type="mp3/mpeg">
                             <p>Thodi Si Daru</p>
                             <p>AP Dhillon, Shreya Ghoshal</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Gal sun.jpg" alt="">
+                            <img width="154px" src="Materials/TrendSongCovers/Gal sun.jpg" class="img-songs" data-audio="Materials/TrendSongs/Gal Sun.mp3" type="mp3/mpeg">
                             <p>Gal Sun</p>
                             <p>Sabat Batin, Rackstar</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Hopeless.jpg" alt="">
+                            <img width="154px" src="Materials/TrendSongCovers/Hopeless.jpg" class="img-songs" data-audio="Materials/TrendSongs/Hopeless.mp3" type="mp3/mpeg">
                             <p>Hopeless</p>
                             <p>Amanraj Gill, Prem Lata</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Ishqa ve.jpg" alt="">
+                            <img width="154px" src="Materials/TrendSongCovers/Ishqa ve.jpg" class="img-songs" data-audio="Materials/TrendSongs/Ishqa Ve.mp3" type="mp3/mpeg">
                             <p>Ishqa Ve</p>
                             <p>Zeeshan Ali</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Narshimha.jpg" alt="">
+                            <img width="154px" src="Materials/TrendSongCovers/Narshimha.jpg" class="img-songs" data-audio="Materials/TrendSongs/Namho Bhagwate.mp3" type="mp3/mpeg">
                             <p>Om Manho Bhagwate Vasudevaya</p>
                             <p>Sam C.S.,Sanjit Hegde, Vijay Prakash,</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Sitare.jpg" alt="">
+                            <img width="154px" src="Materials/TrendSongCovers/Sitare.jpg" class="img-songs" data-audio="Materials/TrendSongs/Sitare.mp3" type="mp3/mpeg">
                             <p>Sitare</p>
                             <p>Arijit Singh, White Noise, Collectives</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/thalapathi.jpg" alt="">
+                            <img width="154px" src="Materials/TrendSongCovers/thalapathi.jpg" class="img-songs" data-audio="Materials/TrendSongs/Thalapathy.mp3" type="mp3/mpeg">
                             <p>Thalapathi Kacheri</p>
                             <p>Anirudh Ravichander, Thalapathi</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Shivay.jpg" alt="">
+                            <img width="154px" src="Materials/TrendSongCovers/Shivay.jpg" class="img-songs" data-audio="Materials/TrendSongs/Darkhast.mp3" type="mp3/mpeg">
                             <p>Darkhaast</p>
                             <p>Mithoon, Arijit Singh, Sunidhi</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Talwinder.jpg" alt="">
+                            <img width="154px" src="Materials/TrendSongCovers/Talwinder.jpg" class="img-songs" data-audio="Materials/TrendSongs/Pal Pal.mp3" type="mp3/mpeg">
                             <p>Pal-Pal</p>
                             <p>Talwinder</p>
                             </div>
