@@ -264,7 +264,7 @@ main{
 }
 
 
-.trendSongList::scroll-button(right),
+/* .trendSongList::scroll-button(right),
 .trendSongList::scroll-button(left){
     content: '→';
     border: none;
@@ -280,7 +280,7 @@ main{
     position-anchor: --trendSongList;
     position-area: right center;
     translate: -90%;
-    scroll-snap-align: start;
+    scroll-snap-align: start;  
 
     
 }
@@ -288,7 +288,7 @@ main{
     content: '←';
     position-area: left center;
     translate:90% ;
-}
+} */
 .trendSongList::scroll-button(right):disabled,.trendSongList::scroll-button(left):disabled{
     opacity: 0;
     cursor: auto;
