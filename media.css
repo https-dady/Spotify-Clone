@@ -1,0 +1,94 @@
+/* @media screen and (max-width:1309px) {
+    main{
+        height: 100vh;
+    }
+    .section1{
+        height: 100vh;
+    }
+    .section2{
+        height: 100vh;
+    }
+} */
+
+@media screen and (max-width:840px) {
+    main{
+        grid-template-columns: 1fr;
+        
+        height: 100vh;
+    }
+    .navInLeft{
+        display: none;
+    }
+    .navMidLine{
+        display: none;
+    }
+    .support{
+        display: none;
+    }
+    .navInRight{
+        width: 300px;
+    }
+    .search{
+        max-width: 380px;
+    }
+    .line{
+        width: 80vw;
+    }
+    .keys{
+        width: 80vw;
+    }
+
+}
+
+@media screen and (max-width:780px) {
+    .search{
+        max-width: 320px;
+    }
+    nav{
+        width: 90vw;
+    }
+    .navInRight{
+        width: 150px;
+    }
+    .section1{
+        width: 100vw;
+    }
+    .section2{
+        width: 100vw;
+    }
+    .logIn{
+        height: 32px;
+        width: 80px;
+    }
+    .keys{
+        width: 80vw;
+        
+    }
+    .allKeys{
+        flex-direction: column;
+        gap: 7px;
+    }
+    .lastLine{
+        display: none;
+    }
+}
+@media screen and (max-width:620px) {
+    .search{
+        max-width: 200px;
+    }
+    .install{
+        width: 32px;
+    }
+    .logIn{
+        height: 25px;
+        width: 50px;
+    }
+}
+@media screen and (max-width:480px) {
+    .search{
+        max-width: 50px;
+    }
+    .navInRight{
+        font-size: 12px;
+    }
+}

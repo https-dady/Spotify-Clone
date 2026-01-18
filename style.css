@@ -20,11 +20,10 @@ body{
 
 nav{
     height: 52px;
-    width: 100%;
+    width: max(100vw 100%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    /* background-color: yellow; */
 }
 
 .navOne{
@@ -58,6 +57,7 @@ nav{
     background-color:#1F1F1F;
     height: 48px;
     width: 478px;
+    max-width: 479px;
     border-radius: 50px;
 }
 .search img{
@@ -71,7 +71,6 @@ nav{
 
 .navTwo{
     display:flex;
-    /* grid-template-columns: 1fr 1fr; */
     align-items: center;
     justify-content: center;
     color: #B3B3B3;
@@ -97,7 +96,6 @@ nav{
 
 .navInRight{
     display: flex;
-    /* grid-template-columns: 1fr 1fr; */
     align-items: center;
     justify-content: center;
     gap: 0.5em;
@@ -178,10 +176,21 @@ main{
 .playSection{
     background-color: #1F1F1F;
     height: 210px;
-    width:min(1em 455px) ;
+    width:max(1em 455px) ;
     position: relative;
 }
 
+.playSection::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Materials/pngs/download\ \(1\).jpg);
+    background-position:center center;
+    filter: blur(2px);
+}
 
 .support{
     height:70px ;
@@ -298,7 +307,6 @@ main{
     gap: 0.4em;
 }
 .trendSongList ul li{
-    /* overflow-y: ; */
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -367,7 +375,7 @@ main{
     right: 22px;
     opacity: 0;
     transform: translateY(-1);
-  transition: transform 0.14s ease-out;
+    transition: transform 0.14s ease-out;
 }
 .liBg:hover::after{
     opacity: 1;
@@ -426,8 +434,6 @@ main{
 }
 .company ul, .spoplans ul, .usefullinks ul, .communities ul{
     list-style: none;
-    /* font-family: "SpotifyMixUI,Inter, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva"; */
-    /* font-family: 'Poppins'; */
     font-family: var(--defFont);
     font-weight: 100;
     color:#B3B3B3;
@@ -452,7 +458,6 @@ main{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    /* list-style: none; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -521,7 +526,7 @@ main{
 }
 
 .logIn:hover{
-     transform: scale(1.05);
+    transform: scale(1.05);
     transition: transform 0.2s ease;
 }
 .home:hover{
@@ -596,42 +601,83 @@ footer{
  /* Player   */
  
 .player{
-    /* align-items: baseline; */
-    position:fixed;
-    bottom: 200px;
+   
+    left: -8px;
+    top: 295px;
+    position: relative;
     display: flex;
 }
+
+
  .player ul{
-    position: absolute;
-    bottom: 60px;
-    left: 140px;
+    position: relative;
+    bottom: 155px;
+    left: 135px;
     list-style: none;
     display: flex;
     align-items: center;
-
-    /* flex-direction: column; */
-    
+    border-radius: 21px;
     justify-content: center;
 }
-.playBar{
-
-    position: absolute;
-    bottom: 100px;
-    left: 90px;
+.player ul li img{
+    box-shadow: inset 0px 0px 6px 3px #631717;
+    background: #1a1a1a86;
+    padding: 5px;
+    border-radius: 21px;
 }
-input[type="range"]{
+
+#songPlayed{
+    position: fixed;
+    top: 150px;
+    left: 110px;
+}
+
+.timeStamp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 321px;
+    left: 110px;
+}
+.currTimeStamp{
+    font-size: 14px;
+    position: relative;
+    top: 0;
+    left: -6px;
+}
+.totalTimeStamp{
+    font-size: 14px;
+    position: relative;
+    top: 0;
+    left: 126px;
+}
+.playBar{
+    position: relative;
+    bottom: 92px;
+    left: -33px;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.571)
+    
+}
+.playBar::-webkit-slider-runnable-track {
+    background: rgb(148, 82, 82);
+    height: 5px;
+    border-radius: 5px;
+}
+
+
+
+.playBar{
     -webkit-appearance: none;
     width: 200px;
-    /* background-color:yellow; */
     height: 4px;
     border-radius: 19px;
+    background:#ffff; 
+    outline: none;
 }
-/* input[type = "range"]::-webkit-slider-runnable-track{
-    height: 2px;
-    background: #bbb;
-    border-radius: %; */
-/* } */
- input[type="range"]::-webkit-slider-thumb{
+
+
+ .playBar::-webkit-slider-thumb{
     -webkit-appearance: none;
     appearance: none;
     width: 18px;
@@ -639,4 +685,5 @@ input[type="range"]{
     border-radius: 50%;
     background: rgb(210, 5, 5);
     cursor: pointer;
+    margin-top: -6px;
  }

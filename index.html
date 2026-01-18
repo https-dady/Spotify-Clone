@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="faviconSpotify.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
 </head>
 
 <body>
@@ -48,12 +50,15 @@
             </div>
             <div class="playSection">
             <div class="player">
+                <div class="songImg"><img id="songPlayed" height="180px" width="180px" style="border-radius: 50%;" src="Materials/pngs/tarun_coder.png"></div>
                 <ul>
+
                     <li><img class="controlBtns previous" src="Materials/letfPlay.svg" alt=""></li>
                     <li><img class="controlBtns play" src="Materials/pause.svg"  alt=""></li>
                     <li><img class="controlBtns pause" src="Materials/play.svg" alt="" style="display: none;"></li>
                     <li><img class="controlBtns next" src="Materials/rightPlay.svg" alt=""></li>
                 </ul>
+                <div class="timeStamp"><span class="currTimeStamp">Click</span><span class="totalTimeStamp">To Play</span></div>
                 <input class="playBar" value="0" type="range" id="currentDuration">
                 <audio style="display: none;" id="play"></audio>
             </div>
@@ -84,84 +89,84 @@
                 <div class="trendSongList">
                     <ul>
                         <li>
-                           <div class="liBg"> <img width="154px" src="Materials/TrendSongCovers/ab67616d00001e028fa95e3e74799cb0b2a1fb57.jpg" class="img-songs" data-audio="Materials/TrendSongs/Aadat.mp3" type="mp3/mpeg">
+                           <div class="liBg"> <img width="154px" src="Materials/TrendSongCovers/ab67616d00001e028fa95e3e74799cb0b2a1fb57.jpg" data-img="Materials/TrendSongCovers/ab67616d00001e028fa95e3e74799cb0b2a1fb57.jpg" class="img-songs" data-audio="Materials/TrendSongs/Aadat.mp3" type="mp3/mpeg">
                             <p>Aadat(Feat.AP Dhillon)</p>
                             <p>Yo Yo Honey Singh, AP Dhillon</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/sheetLahar.jpg" class="img-songs" data-audio="Materials/TrendSongs/Seet Laher.mp3" type="mp3/mpeg">
+                            <img width="154px" src="Materials/TrendSongCovers/sheetLahar.jpg" data-img="Materials/TrendSongCovers/sheetLahar.jpg" class="img-songs" data-audio="Materials/TrendSongs/Seet Laher.mp3" type="mp3/mpeg">
                             <p>Sheet Lehar</p>
                             <p>Filmy, Riyazi</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Dhurandar.jpg" class="img-songs" data-audio="Materials/TrendSongs/Gehra Hua.mp3" type="mp3/mpeg">
+                            <img width="154px" src="Materials/TrendSongCovers/Dhurandar.jpg" data-img="Materials/TrendSongCovers/Dhurandar.jpg" class="img-songs" data-audio="Materials/TrendSongs/Gehra Hua.mp3" type="mp3/mpeg">
                             <p>Gehra Hua</p>
                             <p>Shashwat Sachdev, Arijit Singh, Irshad Kamli</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Thodi Si daru.jpg" class="img-songs" data-audio="Materials/TrendSongs/Thodi Si Daru.mp3" type="mp3/mpeg">
+                            <img width="154px" src="Materials/TrendSongCovers/Thodi Si daru.jpg" data-img="Materials/TrendSongCovers/Thodi Si daru.jpg" class="img-songs" data-audio="Materials/TrendSongs/Thodi Si Daru.mp3" type="mp3/mpeg">
                             <p>Thodi Si Daru</p>
                             <p>AP Dhillon, Shreya Ghoshal</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Gal sun.jpg" class="img-songs" data-audio="Materials/TrendSongs/Gal Sun.mp3" type="mp3/mpeg">
+                            <img width="154px" src="Materials/TrendSongCovers/Gal sun.jpg" data-img="Materials/TrendSongCovers/Gal sun.jpg" class="img-songs" data-audio="Materials/TrendSongs/Gal Sun.mp3" type="mp3/mpeg">
                             <p>Gal Sun</p>
                             <p>Sabat Batin, Rackstar</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Hopeless.jpg" class="img-songs" data-audio="Materials/TrendSongs/Hopeless.mp3" type="mp3/mpeg">
+                            <img width="154px" src="Materials/TrendSongCovers/Hopeless.jpg" data-img="Materials/TrendSongCovers/Hopeless.jpg" class="img-songs" data-audio="Materials/TrendSongs/Hopeless.mp3" type="mp3/mpeg">
                             <p>Hopeless</p>
                             <p>Amanraj Gill, Prem Lata</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Ishqa ve.jpg" class="img-songs" data-audio="Materials/TrendSongs/Ishqa Ve.mp3" type="mp3/mpeg">
+                            <img width="154px" src="Materials/TrendSongCovers/Ishqa ve.jpg" data-img="Materials/TrendSongCovers/Ishqa ve.jpg" class="img-songs" data-audio="Materials/TrendSongs/Ishqa Ve.mp3" type="mp3/mpeg">
                             <p>Ishqa Ve</p>
                             <p>Zeeshan Ali</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Narshimha.jpg" class="img-songs" data-audio="Materials/TrendSongs/Namho Bhagwate.mp3" type="mp3/mpeg">
+                            <img width="154px" src="Materials/TrendSongCovers/Narshimha.jpg" data-img="Materials/TrendSongCovers/Narshimha.jpg" class="img-songs" data-audio="Materials/TrendSongs/Namho Bhagwate.mp3" type="mp3/mpeg">
                             <p>Om Manho Bhagwate Vasudevaya</p>
                             <p>Sam C.S.,Sanjit Hegde, Vijay Prakash,</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Sitare.jpg" class="img-songs" data-audio="Materials/TrendSongs/Sitare.mp3" type="mp3/mpeg">
+                            <img width="154px" src="Materials/TrendSongCovers/Sitare.jpg" data-img="Materials/TrendSongCovers/Sitare.jpg" class="img-songs" data-audio="Materials/TrendSongs/Sitare.mp3" type="mp3/mpeg">
                             <p>Sitare</p>
                             <p>Arijit Singh, White Noise, Collectives</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/thalapathi.jpg" class="img-songs" data-audio="Materials/TrendSongs/Thalapathy.mp3" type="mp3/mpeg">
+                            <img width="154px" src="Materials/TrendSongCovers/thalapathi.jpg" data-img="Materials/TrendSongCovers/thalapathi.jpg" class="img-songs" data-audio="Materials/TrendSongs/Thalapathy.mp3" type="mp3/mpeg">
                             <p>Thalapathi Kacheri</p>
                             <p>Anirudh Ravichander, Thalapathi</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Shivay.jpg" class="img-songs" data-audio="Materials/TrendSongs/Darkhast.mp3" type="mp3/mpeg">
+                            <img width="154px" src="Materials/TrendSongCovers/Shivay.jpg" data-img="Materials/TrendSongCovers/Shivay.jpg" class="img-songs" data-audio="Materials/TrendSongs/Darkhast.mp3" type="mp3/mpeg">
                             <p>Darkhaast</p>
                             <p>Mithoon, Arijit Singh, Sunidhi</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/TrendSongCovers/Talwinder.jpg" class="img-songs" data-audio="Materials/TrendSongs/Pal Pal.mp3" type="mp3/mpeg">
+                            <img width="154px" src="Materials/TrendSongCovers/Talwinder.jpg" data-img="Materials/TrendSongCovers/Talwinder.jpg" class="img-songs" data-audio="Materials/TrendSongs/Pal Pal.mp3" type="mp3/mpeg">
                             <p>Pal-Pal</p>
                             <p>Talwinder</p>
                             </div>
@@ -246,56 +251,56 @@
                 <div class="trendSongList">
                     <ul>
                         <li>
-                           <div class="liBg"> <img width="154px" src="Materials/Aulbum And singles/ab67616d00001e026404721c1943d5069f0805f3.jpg" alt="">
+                           <div class="liBg"> <img width="154px" src="Materials/Aulbum And singles/ab67616d00001e026404721c1943d5069f0805f3.jpg" alt="" class="img-songs" data-img="Materials/Aulbum And singles/ab67616d00001e026404721c1943d5069f0805f3.jpg" data-audio="Materials/Aulbum And singles/Aashique2.mp3" type="mp3/mpeg">
                             <p>Aashiqui 2</p>
                             <p>Mithun, Ankit Tiwari</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/Aulbum And singles/yeh javani.jpg" alt="">
+                            <img width="154px" src="Materials/Aulbum And singles/yeh javani.jpg" alt="" class="img-songs" data-img="Materials/Aulbum And singles/yeh javani.jpg" data-audio="Materials/Aulbum And singles/Ghagra.mp3" type="mp3/mpeg">
                             <p>Yeh Javani Hai Deewani</p>
                             <p>Pritam</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/Aulbum And singles/Sanam teri kasam.jpg" alt="">
+                            <img width="154px" src="Materials/Aulbum And singles/Sanam teri kasam.jpg" alt="" class="img-songs" data-img="Materials/Aulbum And singles/Sanam teri kasam.jpg" data-audio="Materials/Aulbum And singles/Tera Chehra.mp3" type="mp3/mpeg">
                             <p>Sanam Teri Kasam</p>
                             <p>Himesh Reshammiya, Sameer Anjaan</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/Aulbum And singles/Finding her.jpg" alt="">
+                            <img width="154px" src="Materials/Aulbum And singles/Finding her.jpg" alt="" class="img-songs" data-img="Materials/Aulbum And singles/Finding her.jpg" data-audio="Materials/Aulbum And singles/Finding Her.mp3" type="mp3/mpeg">
                             <p>Finding Her</p>
                             <p>Kushagra,Bharath,Saaheal</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/Aulbum And singles/Young.jpg" alt="">
+                            <img width="154px" src="Materials/Aulbum And singles/Young.jpg" alt="" class="img-songs" data-img="Materials/Aulbum And singles/Young.jpg" data-audio="Materials/Aulbum And singles/Young.mp3" type="mp3/mpeg">
                             <p>Young G.O.A.T.</p>
                             <p>Cheema Y,Gur Sidhu</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/Aulbum And singles/Ranjhan.jpg" alt="">
+                            <img width="154px" src="Materials/Aulbum And singles/Ranjhan.jpg" alt="" class="img-songs" data-img="Materials/Aulbum And singles/Ranjhan.jpg" data-audio="Materials/Aulbum And singles/Raanjhan.mp3" type="mp3/mpeg">
                             <p>Raanjhan</p>
                             <p>Sachet-Parampara</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/Aulbum And singles/Making memories.jpg" alt="">
+                            <img width="154px" src="Materials/Aulbum And singles/Making memories.jpg" alt="" class="img-songs" data-img="Materials/Aulbum And singles/Making memories.jpg" data-audio="Materials/Aulbum And singles/Softly.mp3" type="mp3/mpeg">
                             <p>Making Memories</p>
                             <p>Karan Aujla,Ikky</p>
                             </div>
                         </li>
                         <li>
                             <div class="liBg">
-                            <img width="154px" src="Materials/Aulbum And singles/Shubh.jpg" alt="">
+                            <img width="154px" src="Materials/Aulbum And singles/Shubh.jpg" alt="" class="img-songs" data-img="Materials/Aulbum And singles/Shubh.jpg" data-audio="Materials/Aulbum And singles/Sicario.mp3" type="mp3/mpeg">
                             <p>Sicario</p>
                             <p>Shubh</p>
                             </div>
